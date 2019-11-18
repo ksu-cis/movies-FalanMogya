@@ -13,23 +13,23 @@
             <div class="movie-entry">
                 <h2>
                     @movie.Title
-                <smaller>
-                    @(@movie.MPAA_Rating == null ? "" : $"({@movie.MPAA_Rating})")
-                </smaller>
-            </h2>
-            <i>@movie.Major_Genre</i>
-            <div class="ratings">
-                <div>
-                    Rotton Tomatoes
-                    <h3>@movie.Rotten_Tomatoes_Rating</h3>
-                </div>
-                <div>
-                    IMDB
-                    <h3>@movie.IMDB_Rating</h3>
+                    <smaller>
+                        @(@movie.MPAA_Rating == null ? "" : $"({@movie.MPAA_Rating})")
+                    </smaller>
+                </h2>
+                <i>@movie.Major_Genre</i>
+                <div class="ratings">
+                    <div>
+                        Rotton Tomatoes
+                        <h3>@movie.Rotten_Tomatoes_Rating</h3>
+                    </div>
+                    <div>
+                        IMDB
+                        <h3>@movie.IMDB_Rating</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-    }
+         }
     </div>
     <form method="post">
         <input type="text" name="search" id="search" />
