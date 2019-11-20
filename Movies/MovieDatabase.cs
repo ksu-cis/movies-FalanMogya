@@ -12,7 +12,7 @@ namespace Movies
     /// </summary>
     public static class MovieDatabase
     {
-        private static List<Movie> movies = new List<Movie>();
+        private static List<Movie> movies;
 
         public static List<Movie> All {
             get
