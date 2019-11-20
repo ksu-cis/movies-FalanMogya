@@ -11,6 +11,12 @@ form {
     background-color: lightgrey;
     padding: 20px;
     width: 400px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    display: block;
 }
 
 .checkbox-list {
